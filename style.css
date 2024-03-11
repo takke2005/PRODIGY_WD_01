@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #fefefe;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1280px;
+    max-width: 97%;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0 50px 0;
+    background-color: #242424;
+}
+
+header:hover {
+    background-color: black;
+    filter: invert(1);
+    color: yellow;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.project {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 50px;
+    background: #242424;
+}
+
+.project header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project header .logo h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #00ccff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.project header nav ul li {
+    display: inline-block;
+}
+
+.project header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 25px;
+    color: #ffffff;
+    transition-duration: .3s;
+    transition-property: box-shadow, color;
+}
+
+.project header nav ul li.action a,
+.project header nav ul li.products a,
+.project header nav ul li.about a,
+.project header nav ul li.contact a {
+    background: #00ccff;
+    color: #fefefe;
+    padding: 12px 28px;
+    border-radius: 40px;
+    margin-left: 45px;
+    transition-duration: .3s;
+}
+
+.project header nav ul li.action a:hover,
+.project header nav ul li.products a:hover,
+.project header nav ul li.about a:hover,
+.project header nav ul li.contact a:hover {
+    box-shadow: 0px 0px 5px #fffefe, 0px 0px 15px #ffffff;
+    background: #ffffff;
+    color: #000000;
+}
+
+.details {
+    margin-top: 180px;
+}
+
+.details .container {
+    width: 1166px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.details h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.details p {
+    width: 420px;
+    max-width: 100%;
+    text-align: left;
+    font-size: 15px;
+    margin: 30px 0px 20px;
+}
+
+.details a {
+    background: #ffffff;
+    color: #242424;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    transition-duration: .3s;
+    transition-property: box-shadow;
+}
+
+.details a:hover {
+    box-shadow: inset 135px 0px 5px #00d6fc, inset 100px 0px 5px #242424;
+}
+
+.connect {
+    margin-top: 120px;
+}
+
+.connect .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.connect h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+    margin-right: 50px;
+    position: relative;
+}
+
+.connect h3:after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: -48%;
+}
+
+.connect .links a {
+    font-size: 17px;
+    margin: 0px 8px;
+    color: #ffffff;
+}
+
+.connect .links a:hover {
+    color: #00d6fc;
+}
